@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+	<style>
+		article {
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+	<header>
+		<h1>Animacion</h1>
+		</header>
+	<article>
+		<h2>Objeto 1</h2>
+		<object id="my-svg" type="image/svg+xml" data="Estrella.svg"></object>
+		
+		<button onclick="myVivus.reset().play();">replay</button>
+		</article>
+	</main>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+	
+		<script>
+		const myVivus= new Vivus('my-svg');
+			myVivus.stop().reset().play(2);
+		</script>
+	
+	
+</body>
+</html>
