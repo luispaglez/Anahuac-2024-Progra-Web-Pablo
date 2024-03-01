@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+main{
+	
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	/*grid-template-columns: 1fr 2fr 2fr;*/ /* por fracciones */
+	grid-auto-rows: 200px;
+	column-gap: 10px;
+	/*gap: 20px;*/
+}
+	header{
+		background-color: blueviolet; /* si se pone hashtag se puede buscar el color con la rueda de color*/
+		grid-column: 1/4; /* la linea que dividen las columnas, le dices donde empieza y donde termina*/
+	}
+	.uno{
+		background-color: palevioletred;
+		grid-column: 2/3;
+		grid-row: 2; /*este es para moverla verticalmente*/
+	}
+	.dos{
+		background-color: greenyellow;
+		grid-column: 2/3;
+		grid-row: 3/5;
+	}
+.tres{
+	background-color: #E7AA24;
+	opacity: .5;
+		grid-column: 1/3;
+		grid-row: 3/5;
+}
+	footer{
+		background-color: skyblue;
+		grid-column: 1/4;
+		grid-row: 5; 
+	}
